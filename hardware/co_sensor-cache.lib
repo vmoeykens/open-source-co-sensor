@@ -1,0 +1,334 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Amplifier_Operational_AD8603
+#
+DEF Amplifier_Operational_AD8603 U 0 5 Y Y 1 F N
+F0 "U" 0 200 50 H V L CNN
+F1 "Amplifier_Operational_AD8603" 0 -200 50 H V L CNN
+F2 "Package_TO_SOT_SMD:TSOT-23-5" 0 0 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+ALIAS OPA188xxDBV
+$FPLIST
+ TSOT*23*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X V- 2 -100 -300 150 U 50 50 0 1 W
+X V+ 5 -100 300 150 D 50 50 0 1 W
+X ~ 1 300 0 100 L 50 50 1 1 O
+X + 3 -300 100 100 R 50 50 1 1 I
+X - 4 -300 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Amplifier_Operational_AD8620
+#
+DEF Amplifier_Operational_AD8620 U 0 5 Y Y 3 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "Amplifier_Operational_AD8620" 0 -200 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6234 OPA2356xxD OPA2356xxDGK OPA1612AxD MC33172 OPA1602 TLV2372 LT6237
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+ DIP*W7.62mm*
+ TO*99*
+ OnSemi*Micro8*
+ TSSOP*3x3mm*P0.65mm*
+ TSSOP*4.4x3mm*P0.65mm*
+ MSOP*3x3mm*P0.65mm*
+ SSOP*3.9x4.9mm*P0.635mm*
+ LFCSP*2x2mm*P0.5mm*
+ *SIP*
+ SOIC*5.3x6.2mm*P1.27mm*
+$ENDFPLIST
+DRAW
+P 4 1 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 2 1 10 -200 200 200 0 -200 -200 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X + 5 -300 100 100 R 50 50 2 1 I
+X - 6 -300 -100 100 R 50 50 2 1 I
+X ~ 7 300 0 100 L 50 50 2 1 O
+X V- 4 -100 -300 150 U 50 50 3 1 W
+X V+ 8 -100 300 150 D 50 50 3 1 W
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# co_sensor-rescue_+3.3V-power
+#
+DEF co_sensor-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "co_sensor-rescue_+3.3V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# co_sensor-rescue_+5V-power
+#
+DEF co_sensor-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "co_sensor-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# co_sensor-rescue_Conn_01x06-Connector_Generic
+#
+DEF co_sensor-rescue_Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "co_sensor-rescue_Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# co_sensor-rescue_Conn_01x28-Connector_Generic
+#
+DEF co_sensor-rescue_Conn_01x28-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 1400 50 H V C CNN
+F1 "co_sensor-rescue_Conn_01x28-Connector_Generic" 0 -1500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -1395 0 -1405 1 1 6 N
+S -50 -1295 0 -1305 1 1 6 N
+S -50 -1195 0 -1205 1 1 6 N
+S -50 -1095 0 -1105 1 1 6 N
+S -50 -995 0 -1005 1 1 6 N
+S -50 -895 0 -905 1 1 6 N
+S -50 -795 0 -805 1 1 6 N
+S -50 -695 0 -705 1 1 6 N
+S -50 -595 0 -605 1 1 6 N
+S -50 -495 0 -505 1 1 6 N
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 405 0 395 1 1 6 N
+S -50 505 0 495 1 1 6 N
+S -50 605 0 595 1 1 6 N
+S -50 705 0 695 1 1 6 N
+S -50 805 0 795 1 1 6 N
+S -50 905 0 895 1 1 6 N
+S -50 1005 0 995 1 1 6 N
+S -50 1105 0 1095 1 1 6 N
+S -50 1205 0 1195 1 1 6 N
+S -50 1305 0 1295 1 1 6 N
+S -50 1350 50 -1450 1 1 10 f
+X Pin_1 1 -200 1300 150 R 50 50 1 1 P
+X Pin_10 10 -200 400 150 R 50 50 1 1 P
+X Pin_11 11 -200 300 150 R 50 50 1 1 P
+X Pin_12 12 -200 200 150 R 50 50 1 1 P
+X Pin_13 13 -200 100 150 R 50 50 1 1 P
+X Pin_14 14 -200 0 150 R 50 50 1 1 P
+X Pin_15 15 -200 -100 150 R 50 50 1 1 P
+X Pin_16 16 -200 -200 150 R 50 50 1 1 P
+X Pin_17 17 -200 -300 150 R 50 50 1 1 P
+X Pin_18 18 -200 -400 150 R 50 50 1 1 P
+X Pin_19 19 -200 -500 150 R 50 50 1 1 P
+X Pin_2 2 -200 1200 150 R 50 50 1 1 P
+X Pin_20 20 -200 -600 150 R 50 50 1 1 P
+X Pin_21 21 -200 -700 150 R 50 50 1 1 P
+X Pin_22 22 -200 -800 150 R 50 50 1 1 P
+X Pin_23 23 -200 -900 150 R 50 50 1 1 P
+X Pin_24 24 -200 -1000 150 R 50 50 1 1 P
+X Pin_25 25 -200 -1100 150 R 50 50 1 1 P
+X Pin_26 26 -200 -1200 150 R 50 50 1 1 P
+X Pin_27 27 -200 -1300 150 R 50 50 1 1 P
+X Pin_28 28 -200 -1400 150 R 50 50 1 1 P
+X Pin_3 3 -200 1100 150 R 50 50 1 1 P
+X Pin_4 4 -200 1000 150 R 50 50 1 1 P
+X Pin_5 5 -200 900 150 R 50 50 1 1 P
+X Pin_6 6 -200 800 150 R 50 50 1 1 P
+X Pin_7 7 -200 700 150 R 50 50 1 1 P
+X Pin_8 8 -200 600 150 R 50 50 1 1 P
+X Pin_9 9 -200 500 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# co_sensor-rescue_GND-power
+#
+DEF co_sensor-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "co_sensor-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# dk_Gas-Sensors_110-109
+#
+DEF dk_Gas-Sensors_110-109 U 0 40 Y Y 1 F N
+F0 "U" -500 500 60 H V C CNN
+F1 "dk_Gas-Sensors_110-109" -400 -300 60 H V L CNN
+F2 "digikey-footprints:Gas_Sensor_110-109" 200 200 60 H I L CNN
+F3 "http://www.spec-sensors.com/wp-content/uploads/2016/04/3SP_CO_1000-C-Package-110-109.pdf" 200 300 60 H I L CNN
+F4 "1684-1001-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "110-109" 200 500 60 H I L CNN "MPN"
+F6 "Sensors, Transducers" 200 600 60 H I L CNN "Category"
+F7 "Gas Sensors" 200 700 60 H I L CNN "Family"
+F8 "http://www.spec-sensors.com/wp-content/uploads/2016/04/3SP_CO_1000-C-Package-110-109.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/spec-sensors-llc/110-109/1684-1001-ND/6136364" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SENSOR GAS CO ANALOG CUR MOD" 200 1000 60 H I L CNN "Description"
+F11 "SPEC Sensors, LLC" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -400 400 100 -200 0 1 0 f
+X W 1 200 300 100 L 50 50 1 1 O
+X W 10 200 200 100 L 50 50 1 1 O
+X NC 2 -500 100 100 R 50 50 1 1 N
+X NC 3 -500 0 100 R 50 50 1 1 N
+X NC 4 -500 -100 100 R 50 50 1 1 N
+X REF 5 -500 300 100 R 50 50 1 1 P
+X Counter 6 -500 200 100 R 50 50 1 1 I
+X NC 7 200 -100 100 L 50 50 1 1 N
+X NC 8 200 0 100 L 50 50 1 1 N
+X NC 9 200 100 100 L 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
+# dk_LED-Indication-Discrete_LTST-C171KGKT
+#
+DEF dk_LED-Indication-Discrete_LTST-C171KGKT D 0 0 Y Y 1 F N
+F0 "D" -150 150 60 H V C CNN
+F1 "dk_LED-Indication-Discrete_LTST-C171KGKT" -50 -150 60 H V C CNN
+F2 "digikey-footprints:0805" 200 200 60 H I L CNN
+F3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-118/LTST-C171KGKT.pdf" 200 300 60 H I L CNN
+F4 "160-1426-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LTST-C171KGKT" 200 500 60 H I L CNN "MPN"
+F6 "Optoelectronics" 200 600 60 H I L CNN "Category"
+F7 "LED Indication - Discrete" 200 700 60 H I L CNN "Family"
+F8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-118/LTST-C171KGKT.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/lite-on-inc/LTST-C171KGKT/160-1426-1-ND/386798" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "LED GREEN CLEAR SMD" 200 1000 60 H I L CNN "Description"
+F11 "Lite-On Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -25 150 -75 100 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 25 125 -25 75 N
+P 3 0 1 0 -50 150 -25 150 -25 125 N
+P 3 0 1 0 0 125 25 125 25 100 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_LED-Indication-Discrete_LTST-C171KRKT
+#
+DEF dk_LED-Indication-Discrete_LTST-C171KRKT D 0 0 Y Y 1 F N
+F0 "D" -150 100 60 H V C CNN
+F1 "dk_LED-Indication-Discrete_LTST-C171KRKT" -50 -150 60 H V C CNN
+F2 "digikey-footprints:0805" 200 200 60 H I L CNN
+F3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-109/LTST-C171KRKT.pdf" 200 300 60 H I L CNN
+F4 "160-1427-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LTST-C171KRKT" 200 500 60 H I L CNN "MPN"
+F6 "Optoelectronics" 200 600 60 H I L CNN "Category"
+F7 "LED Indication - Discrete" 200 700 60 H I L CNN "Family"
+F8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-109/LTST-C171KRKT.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/lite-on-inc/LTST-C171KRKT/160-1427-1-ND/386800" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "LED RED CLEAR SMD" 200 1000 60 H I L CNN "Description"
+F11 "Lite-On Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -25 150 -75 100 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 25 125 -25 75 N
+P 3 0 1 0 -50 150 -25 150 -25 125 N
+P 3 0 1 0 0 125 25 125 25 100 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice_C
+#
+DEF pspice_C C 0 10 Y Y 1 F N
+F0 "C" 100 150 50 V V C CNN
+F1 "pspice_C" 100 -150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS C
+DRAW
+P 2 0 1 0 -150 -50 150 -50 N
+P 2 0 1 0 -150 50 150 50 N
+X ~ 1 0 250 200 D 40 40 1 1 P
+X ~ 2 0 -250 200 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
