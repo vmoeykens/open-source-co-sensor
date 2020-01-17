@@ -1,14 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:co_sensor-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "STM32 Value Line Discovery - Shiled board"
-Date "20 oct 2012"
-Rev "1.0"
-Comp ""
+Title "Open Source CO Sensor"
+Date "2020-01-17"
+Rev "0.1"
+Comp "Vincent Moeykens"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -634,10 +633,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_
 	1    0    0    -1  
 $EndComp
 $Comp
-L co_sensor-rescue:+3.3V-power #PWR?
+L co_sensor-rescue:+3.3V-power #PWR08
 U 1 1 5DF1F178
 P 9650 5100
-F 0 "#PWR?" H 9650 4950 50  0001 C CNN
+F 0 "#PWR08" H 9650 4950 50  0001 C CNN
 F 1 "+3.3V-power" H 9665 5273 50  0000 C CNN
 F 2 "" H 9650 5100 50  0001 C CNN
 F 3 "" H 9650 5100 50  0001 C CNN
@@ -645,10 +644,10 @@ F 3 "" H 9650 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 5DF20072
 P 9200 5100
-F 0 "#PWR?" H 9200 4850 50  0001 C CNN
+F 0 "#PWR07" H 9200 4850 50  0001 C CNN
 F 1 "GND" H 9205 4927 50  0000 C CNN
 F 2 "" H 9200 5100 50  0001 C CNN
 F 3 "" H 9200 5100 50  0001 C CNN
