@@ -159,26 +159,15 @@ Wire Notes Line
 Text Notes 1650 650  0    50   ~ 0
 MQ-7 Sensor Breakout
 $Comp
-L Connector:Barrel_Jack J1
-U 1 1 5EB62775
-P 4050 950
-F 0 "J1" V 4061 1138 50  0000 L CNN
-F 1 "Barrel_Jack" V 4152 1138 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 4100 910 50  0001 C CNN
-F 3 "~" H 4100 910 50  0001 C CNN
-	1    4050 950 
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5EB63CD1
-P 3950 1250
-F 0 "#PWR0109" H 3950 1000 50  0001 C CNN
-F 1 "GND" H 3955 1077 50  0000 C CNN
-F 2 "" H 3950 1250 50  0001 C CNN
-F 3 "" H 3950 1250 50  0001 C CNN
-	1    3950 1250
-	1    0    0    -1  
+P 4400 1250
+F 0 "#PWR0109" H 4400 1000 50  0001 C CNN
+F 1 "GND" H 4405 1077 50  0000 C CNN
+F 2 "" H 4400 1250 50  0001 C CNN
+F 3 "" H 4400 1250 50  0001 C CNN
+	1    4400 1250
+	0    -1   -1   0   
 $EndComp
 Wire Notes Line
 	4800 1550 4800 700 
@@ -190,7 +179,7 @@ Wire Notes Line
 	3750 1550 4800 1550
 Text Notes 4000 650  0    50   ~ 0
 5v Barrel Input
-Text GLabel 4150 1250 3    50   Input ~ 0
+Text GLabel 4400 1050 2    50   Input ~ 0
 VCC
 Text GLabel 3550 3100 1    50   Input ~ 0
 VCC
@@ -303,4 +292,17 @@ Wire Notes Line
 	4150 4300 3100 4300
 Wire Notes Line
 	3100 4300 3100 2850
+$Comp
+L PJ1-022-SMT:PJ1-022-SMT-TR J1
+U 1 1 5EB6AA59
+P 4200 1150
+F 0 "J1" H 4195 1490 50  0000 C CNN
+F 1 "PJ1-022-SMT-TR" H 4195 1399 50  0000 C CNN
+F 2 "CUI_PJ1-022-SMT-TR" H 4200 1150 50  0001 L BNN
+F 3 "CUI INC" H 4200 1150 50  0001 L BNN
+F 4 "1.05" H 4200 1150 50  0001 L BNN "Field4"
+F 5 "Manufacturer recommendations" H 4200 1150 50  0001 L BNN "Field5"
+	1    4200 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
