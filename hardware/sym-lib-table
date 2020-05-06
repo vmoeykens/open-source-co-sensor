@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name co_sensor-rescue)(type Legacy)(uri ${KIPRJMOD}/co_sensor-rescue.lib)(options "")(descr ""))
   (lib (name ESP8266)(type Legacy)(uri /home/vmoeykens/projects/kicad-libraries/kicad-ESP8266/ESP8266.lib)(options "")(descr ""))
+  (lib (name LM393AR)(type Legacy)(uri /home/vmoeykens/projects/kicad-libraries/LM393AR/2020-05-06_13-57-58.lib)(options "")(descr ""))
 )

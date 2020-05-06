@@ -3,4 +3,5 @@
   (lib (name smd_capacitor)(type KiCad)(uri ${KIPRJMOD}/libraries/smd_capacitor)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/libraries/opamp/footprints.pretty)(options "")(descr ""))
   (lib (name ESP8266)(type KiCad)(uri /home/vmoeykens/projects/kicad-libraries/kicad-ESP8266/ESP8266.pretty)(options "")(descr ""))
+  (lib (name LM393AR)(type KiCad)(uri /home/vmoeykens/projects/kicad-libraries/LM393AR/footprints.pretty)(options "")(descr ""))
 )
